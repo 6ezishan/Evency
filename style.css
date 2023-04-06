@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.heading {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: #3867d6;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 4rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #666;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #444;
+
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: black;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span {
+    color: #3867d6;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #3867d6;
+    border-bottom: .2rem solid black;
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+
+    
+}
+
+.header .icons div:hover {
+    color: #3867d6;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+
+.home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+
+.home .content h3 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content h3 span {
+    color: #3867d6;
+    text-transform: uppercase;
+}
+
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+.service .box-container .box {
+    border-radius: .5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+
+.service .box-container .box:hover {
+    transform: scale(1.03);
+}
+
+
+.service .box-container .box i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: #666;
+    color: #333;
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.8;
+}
+
+
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box:hover {
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title  {
+    background: #3867d6;
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount {
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-container .box ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder  {
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+    background: #444;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.footer {
+    background: #111;
+    text-align: center;
+}
+
+.footer .share {
+    padding: 2rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: #fff;
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: #444;
+}
+
+.footer .credit {
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: bolder;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: #3867d6;
+}
+
+
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    
+}
+
+
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #333;
+        width: 30rem;
+        height: calc(100vh - 5.5rem);
+        transition: 1.05s;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: white;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
